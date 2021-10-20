@@ -10,8 +10,6 @@ dev.off()
 
 #par(mfrow=c(1,1))
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 country=read.table(file="country cluster.txt",sep="\n")
 
 country=country[,1]
