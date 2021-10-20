@@ -4,8 +4,6 @@ dev.off()
 
 par(mfrow=c(1,1))
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 ddgpd=function(k,igamma,sigma){
   return((1+igamma*k/sigma)^(-1/igamma)-(1+igamma*(k+1)/sigma)^(-1/igamma))
 }
