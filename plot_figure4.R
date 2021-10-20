@@ -181,9 +181,6 @@ abline(v=25,col="red",lty=5)
 
 ###########################################
 
-
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 country=read.table(file="country cluster.txt",sep="\n")
 
 country=country[,1]
@@ -354,8 +351,6 @@ abline(a=0.65,b=0,col="red",lty=5)
 abline(v=15,col="red",lty=5)
 
 ######################################
-
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
 
 country=read.table(file="country cluster.txt",sep="\n")
 
@@ -705,8 +700,6 @@ abline(v=16,col="red",lty=5)
 
 ############################################
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 country=read.table(file="country cluster.txt",sep="\n")
 
 country=country[,1]
@@ -879,8 +872,6 @@ abline(a=1.1,b=0,col="red",lty=5)
 abline(v=26,col="red",lty=5)
 
 #############################################
-
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
 
 country=read.table(file="country cluster.txt",sep="\n")
 
@@ -1439,8 +1430,6 @@ abline(a=0.75,b=0,col="red",lty=5)
 abline(v=20,col="red",lty=5)
 
 #########################################
-
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
 
 country=read.table(file="country cluster.txt",sep="\n")
 
