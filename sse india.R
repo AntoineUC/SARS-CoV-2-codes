@@ -1,7 +1,5 @@
 rm(list=ls())
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 load(file="traceDatSaved.Rdata")
 
 traceDat <- traceDatSaved
