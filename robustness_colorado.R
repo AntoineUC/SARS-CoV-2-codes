@@ -10,8 +10,6 @@ dev.off()
 
 #par(mfrow=c(1,1))
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 Z=read.table(file="colorado_new.txt")
 
 Z=Z[,1]
