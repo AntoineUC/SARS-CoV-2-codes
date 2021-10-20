@@ -8,8 +8,6 @@ library(ggplot2)
 
 library(mapdata)
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
-
 Z=read.table(file="colorado_new.txt")
 
 Z=Z[,1]
