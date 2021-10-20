@@ -1,4 +1,3 @@
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
 
 library(ggplot2)
 
