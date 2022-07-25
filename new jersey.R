@@ -12,35 +12,21 @@ dev.off()
 
 map(database="usa",fill=T,col="white")
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="United States")
 
 usindex=which(country=="United States")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
-latitude=read.table(file="latitude clusters.txt",header=F,dec=".",sep="\n")
+latitude=clusters[usindex,3]
 
-latitude=latitude[,1]
-
-latitude=latitude[usindex]
-
-longitude=read.table(file="longitude clusters.txt",header=F,dec=".")
-
-longitude=longitude[,1]
-
-longitude=longitude[usindex]
-
-#points(longitude,latitude,cex=0.6,col="red")
+longitude=clusters[usindex,4]
 
 Y=uscases
 
