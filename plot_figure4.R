@@ -8,19 +8,15 @@ library(mapdata)
 
 par(mfrow=c(3,3))
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Australia")
 
 usindex=which(country=="Australia")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -181,19 +177,15 @@ abline(v=25,col="red",lty=5)
 
 ###########################################
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Brazil")
 
 usindex=which(country=="Brazil")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -352,19 +344,15 @@ abline(v=15,col="red",lty=5)
 
 ######################################
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Canada")
 
 usindex=which(country=="Canada")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -528,21 +516,15 @@ abline(v=25,col="red",lty=5)
 
 ####################################
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
+load(file="clusters.Rdata")
 
-country=read.table(file="country cluster.txt",sep="\n")
-
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="China")
 
 usindex=which(country=="China")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -700,19 +682,15 @@ abline(v=16,col="red",lty=5)
 
 ############################################
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="France")
 
 usindex=which(country=="France")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -873,19 +851,15 @@ abline(v=26,col="red",lty=5)
 
 #############################################
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Italy")
 
 usindex=which(country=="Italy")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -1048,37 +1022,21 @@ abline(v=34,col="red",lty=5)
 
 #####################################
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
+load(file="clusters.Rdata")
 
-country=read.table(file="country cluster.txt",sep="\n")
-
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="United States")
 
 usindex=which(country=="United States")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
-latitude=read.table(file="latitude clusters.txt",header=F,dec=".",sep="\n")
+latitude=clusters[usindex,3]
 
-latitude=latitude[,1]
-
-latitude=latitude[usindex]
-
-longitude=read.table(file="longitude clusters.txt",header=F,dec=".")
-
-longitude=longitude[,1]
-
-longitude=longitude[usindex]
-
-#points(longitude,latitude,cex=0.6,col="red")
+longitude=clusters[usindex,4]
 
 Y=uscases
 
@@ -1253,21 +1211,15 @@ abline(v=75,col="red",lty=5)
 
 ###################################
 
-setwd("C:/Users/antoi/Dropbox/Post doc ENSAI/PNAS")
+load(file="clusters.Rdata")
 
-country=read.table(file="country cluster.txt",sep="\n")
-
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Singapore")
 
 usindex=which(country=="Singapore")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
@@ -1431,19 +1383,15 @@ abline(v=20,col="red",lty=5)
 
 #########################################
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="South Korea")
 
 usindex=which(country=="South Korea")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
