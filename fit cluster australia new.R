@@ -8,19 +8,15 @@ library(mapdata)
 
 par(mfrow=c(1,1))
 
-country=read.table(file="country cluster.txt",sep="\n")
+load(file="clusters.Rdata")
 
-country=country[,1]
+country=clusters[,2]
 
 sum(country=="Australia")
 
 usindex=which(country=="Australia")
 
-total.cases=read.table(file="total cases.txt",header=F,sep="\n")
-
-total.cases=total.cases[,1]
-
-uscases=total.cases[usindex]
+uscases=clusters[usindex,1]
 
 uscases=as.numeric(as.vector(uscases))
 
