@@ -10,7 +10,7 @@ dev.off()
 
 #par(mfrow=c(1,1))
 
-Z=read.table(file="colorado_new.txt")
+Z=read.table(file="colorado.txt")
 
 Z=Z[,1]
 
